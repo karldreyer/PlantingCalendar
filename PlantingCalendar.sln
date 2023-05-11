@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResourceAccess", "ResourceAccess", "{F0CE1B5F-F7E0-488B-86AB-104D222A6EEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantingCalendar.DataLoader.Console", "PlantingCalendarDataLoader.Console\PlantingCalendar.DataLoader.Console.csproj", "{64756119-648E-4803-8F55-DA588C76C5C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantingCalendar.ResourceAccess", "PlantingCalendarDataLoader.ResourceAccess\PlantingCalendar.ResourceAccess.csproj", "{B7AB1CB4-C4FA-4766-8BB1-8ABD6C90FAC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{3DE8F87E-7046-4FA3-9D1C-21AA0A2EAD4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantingCalendar.Entities", "PlantingCalendarDataLoader.Entities\PlantingCalendar.Entities.csproj", "{502FF160-91CC-4472-96B8-1604BDF72325}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B1D0DAED-7DCE-4F14-A297-CDABF8B11C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantingCalendar.Querry.Api", "PlantingCalendarDataLoader.Querry.Api\PlantingCalendar.Querry.Api.csproj", "{D259E9EE-0F40-45C6-914B-8DA9B3725CD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64756119-648E-4803-8F55-DA588C76C5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64756119-648E-4803-8F55-DA588C76C5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64756119-648E-4803-8F55-DA588C76C5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64756119-648E-4803-8F55-DA588C76C5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7AB1CB4-C4FA-4766-8BB1-8ABD6C90FAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7AB1CB4-C4FA-4766-8BB1-8ABD6C90FAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7AB1CB4-C4FA-4766-8BB1-8ABD6C90FAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7AB1CB4-C4FA-4766-8BB1-8ABD6C90FAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502FF160-91CC-4472-96B8-1604BDF72325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502FF160-91CC-4472-96B8-1604BDF72325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502FF160-91CC-4472-96B8-1604BDF72325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502FF160-91CC-4472-96B8-1604BDF72325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D259E9EE-0F40-45C6-914B-8DA9B3725CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D259E9EE-0F40-45C6-914B-8DA9B3725CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D259E9EE-0F40-45C6-914B-8DA9B3725CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D259E9EE-0F40-45C6-914B-8DA9B3725CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7AB1CB4-C4FA-4766-8BB1-8ABD6C90FAC2} = {F0CE1B5F-F7E0-488B-86AB-104D222A6EEA}
+		{502FF160-91CC-4472-96B8-1604BDF72325} = {3DE8F87E-7046-4FA3-9D1C-21AA0A2EAD4E}
+		{D259E9EE-0F40-45C6-914B-8DA9B3725CD1} = {B1D0DAED-7DCE-4F14-A297-CDABF8B11C02}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {762117E5-D7F2-4134-B726-FC3FED1ED18F}
+	EndGlobalSection
+EndGlobal
