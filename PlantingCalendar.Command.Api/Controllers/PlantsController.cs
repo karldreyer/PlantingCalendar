@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using PlantingCalendar.Entities;
+using PlantingCalendar.Entities.DTOs;
+using PlantingCalendar.Entities.Models;
 using PlantingCalendar.ResourceAccess.Interfaces;
 using System.Diagnostics.Metrics;
+using Plant = PlantingCalendar.Entities.DTOs.Plant;
 
 namespace PlantingCalendar.Command.Api.Controllers
 {
@@ -10,9 +12,9 @@ namespace PlantingCalendar.Command.Api.Controllers
     public class PlantsController : ControllerBase
     {
         private readonly ILogger<PlantsController> _logger;
-        private readonly IPlantingCalendarRepository _plantingCalendarRepository;
+        private readonly IPlantRepository _plantingCalendarRepository;
 
-        public PlantsController(ILogger<PlantsController> logger, IPlantingCalendarRepository plantingCalendarRepository)
+        public PlantsController(ILogger<PlantsController> logger, IPlantRepository plantingCalendarRepository)
         {
             _logger = logger;
             _plantingCalendarRepository = plantingCalendarRepository;
@@ -27,8 +29,9 @@ namespace PlantingCalendar.Command.Api.Controllers
         [HttpPost]
         public async Task<ActionResult> AddPlant(Plant plant)
         {
-            var newPlantId = _plantingCalendarRepository.AddPlant(plant);
-            return CreatedAtAction(nameof(GetPlant), new { id = newPlantId });
+            return null;
+            //var newPlantId = _plantingCalendarRepository.AddPlant(plant);
+            //return CreatedAtAction(nameof(GetPlant), new { id = newPlantId });
         }
 
         

@@ -34,7 +34,7 @@ namespace PlantingCalendar.DataLoader.Console
 
         private static void SetupDependencyInjection(IServiceCollection services)
         {
-            services.AddTransient<IPlantingCalendarRepository, PlantingCalendarRepository>();
+            services.AddTransient<IPlantRepository, PlantRepository>();
             services.AddTransient<ILoaderService, LoaderService>();
         }
 

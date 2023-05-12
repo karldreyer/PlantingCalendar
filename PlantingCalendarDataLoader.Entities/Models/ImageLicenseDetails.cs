@@ -1,4 +1,4 @@
-﻿namespace PlantingCalendar.Entities
+﻿namespace PlantingCalendar.Entities.Models
 {
     public class ImageLicenseDetails
     {

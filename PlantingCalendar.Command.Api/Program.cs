@@ -1,5 +1,7 @@
+using AutoMapper;
 using PlantingCalendar.ResourceAccess;
 using PlantingCalendar.ResourceAccess.Interfaces;
+using PlantingCalendar.ResourceAccess.Mapping;
 using Serilog;
 
 namespace PlantingCalendar.Command.Api
@@ -24,12 +26,14 @@ namespace PlantingCalendar.Command.Api
                 options.AddPolicy(allowAllPolicyName, p => p.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
             });
 
-            builder.Services.AddScoped<IPlantingCalendarRepository, PlantingCalendarRepository>();
+            builder.Services.AddScoped<IPlantRepository, PlantRepository>();
 
             builder.Host.UseSerilog((context, loggerConfiguration) =>
             {
                 loggerConfiguration.WriteTo.Console().ReadFrom.Configuration(context.Configuration);
             });
+
+            builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
             var app = builder.Build();
 

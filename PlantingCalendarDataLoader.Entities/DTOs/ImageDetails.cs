@@ -1,4 +1,6 @@
-﻿namespace PlantingCalendar.Entities
+﻿using PlantingCalendar.Entities.DTOs;
+
+namespace PlantingCalendar.Entities
 {
     public class ImageDetails
     {
