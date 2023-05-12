@@ -1,6 +1,8 @@
+using PlantingCalendar.ResourceAccess;
+using PlantingCalendar.ResourceAccess.Interfaces;
 using Serilog;
 
-namespace PlantingCalendar.Querry.Api
+namespace PlantingCalendar.Command.Api
 {
     public class Program
     {
@@ -22,12 +24,16 @@ namespace PlantingCalendar.Querry.Api
                 options.AddPolicy(allowAllPolicyName, p => p.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
             });
 
+            builder.Services.AddScoped<IPlantingCalendarRepository, PlantingCalendarRepository>();
+
             builder.Host.UseSerilog((context, loggerConfiguration) =>
             {
                 loggerConfiguration.WriteTo.Console().ReadFrom.Configuration(context.Configuration);
             });
 
             var app = builder.Build();
+
+            
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -42,7 +48,7 @@ namespace PlantingCalendar.Querry.Api
 
             app.UseAuthorization();
 
-            app.UseCors("allowAllPolicyName");
+            app.UseCors(allowAllPolicyName);
 
             app.MapControllers();
 

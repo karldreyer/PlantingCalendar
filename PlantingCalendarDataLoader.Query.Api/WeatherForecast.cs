@@ -1,4 +1,4 @@
-namespace PlantingCalendar.Querry.Api
+namespace PlantingCalendar.Query.Api
 {
     public class WeatherForecast
     {

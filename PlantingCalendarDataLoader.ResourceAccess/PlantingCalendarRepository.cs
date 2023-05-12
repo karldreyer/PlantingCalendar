@@ -1,4 +1,4 @@
-﻿using PlantingCalendar.Entities.DTOs;
+﻿using PlantingCalendar.Entities;
 using PlantingCalendar.ResourceAccess.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,9 +10,9 @@ namespace PlantingCalendar.ResourceAccess
 {
     public class PlantingCalendarRepository : IPlantingCalendarRepository
     {
-        public void LoadPlant(Plant plant)
+        public int AddPlant(Plant plant)
         {
-            return;
+            return 1;
         }
     }
 }

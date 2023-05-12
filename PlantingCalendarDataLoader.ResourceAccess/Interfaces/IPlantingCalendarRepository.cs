@@ -1,9 +1,9 @@
-﻿using PlantingCalendar.Entities.DTOs;
+﻿using PlantingCalendar.Entities;
 
 namespace PlantingCalendar.ResourceAccess.Interfaces
 {
     public interface IPlantingCalendarRepository
     {
-        void LoadPlant(Plant plant);
+        int AddPlant(Plant plant);
     }
 }

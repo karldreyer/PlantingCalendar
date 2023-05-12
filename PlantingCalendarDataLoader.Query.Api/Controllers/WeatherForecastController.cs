@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PlantingCalendar.Querry.Api.Controllers
+namespace PlantingCalendar.Query.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
